@@ -1,37 +1,19 @@
-This project demonstrates the use of Tableau to perform complex data joining and visualization for human resources (HR) analytics. The goal was to transform disparate data tables, Demographics, Job Titles, and Salaries into a single, interactive dashboard that provides insights into organizational pay structures and employee distribution. 
-
-Data Engineering & Architecture
-​To create a unified view, I performed Data Joins within Tableau’s physical layer:
-​Data Source: Three Microsoft Excel tables (Demographics, JobTitle, and Salary).
-
-​Join Logic: Utilized Inner Joins with EmployeeID as the primary linking key across all three tables to ensure data integrity.
-
-​Final Dataset: A consolidated 9-field, 7-row table ready for visualization.
-
-​Key Visualizations & Insights
-​Organizational Salary Distribution
-​Visualization Type: Ranked Bar Chart.
-
-​Objective: Identify top earners and salary variance across the organization.
-
-​Logic: Aggregated SUM(Employee Salary) by Name of Employee.
-
-​Visual Elements: Applied a continuous color gradient (ranging from \$35,000 to \$70,000) to provide an immediate visual cue for pay scale hierarchy.
-
-​Employee Profiles
-​The project successfully maps specific attributes including:
-
-​Demographic Breakdown: Tracking age and gender (e.g., Identifying Jim Halpert, 35, Male).
-
-​Hierarchy Mapping: Linking specific employees to their job titles and corresponding salary tiers.
-
+Project Overview
+​The objective of this project was to analyze employee demographics and salary distributions to identify pay equity trends and organizational structure. I integrated separate data entities—Demographics, Job Titles, and Salaries—to create a holistic view of the company’s human capital.
+​Data Engineering: The "Join" Logic
+​A critical component of this project was establishing a reliable data foundation using Tableau’s physical layer:
+​Multi-Table Integration: Successfully joined three distinct Microsoft Excel sheets: Demographics, JobTitle, and Salary.
+​Key Identification: Performed an Inner Join using EmployeeID as the primary key to ensure each record contained matching personal, professional, and financial data.
+​Data Validation: Verified the join resulted in a clean 9-field schema, allowing for granular filtering by Gender, Age, and Job Title.
+​Visualization & Analytical Insights
+​I translated the joined data into a high-impact visualization to communicate payroll insights:
+​Salary Hierarchy Mapping: Created a ranked bar chart aggregating SUM(Employee Salary) by individual employee names.
+​Visual Encoding: Used a continuous color gradient (Deep Blue to Light Blue) to represent a salary range from $35,000 to $70,000, making pay disparities immediately visible to stakeholders.
+​Demographic Overlay: Enabled the ability to cross-reference high-earning roles with specific demographic data, such as age and gender, to support diversity and inclusion audits.
 ​Technical Skills Demonstrated
-​Tableau Physical Layer Joins: Connecting multiple Excel data sources.
-
-​Data Aggregation: Using SUM and Dimensions to create meaningful metrics.
-
-​Visual Storytelling: Implementing color marks and sorted axes to enhance readability and insight generation.
-
+​Data Modeling: Managing table relationships and joins within Tableau.
+​Visual Analytics: Selecting appropriate chart types (Ranked Bar Charts) to answer specific business questions.
+​Formatting & Aesthetics: Utilizing color marks and labels to enhance the user's ability to interpret complex financial data quickly.
 ​Advanced Dashboarding: Bridging the gap between raw data and executive-level HR insights.  
 
 Objective: To provide executive-level insights into departmental pay scales and identify compensation trends
